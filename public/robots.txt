@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://jsofttechnologieske.vercel.app
-
-# Sitemaps
-Sitemap: https://jsofttechnologieske.vercel.app/sitemap.xml
