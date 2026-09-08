@@ -35,20 +35,9 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="relative py-16 md:py-20 bg-gradient-to-b from-amber-50 via-white to-amber-50 overflow-hidden">
+    <section className="relative py-16 md:py-20 bg-white  overflow-hidden">
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
-
-        <div className="absolute top-[-180px] left-[-120px] w-[400px] h-[400px] bg-orange-300/20 blur-[120px] rounded-full" />
-
-        <div className="absolute bottom-[-180px] right-[-120px] w-[400px] h-[400px] bg-blue-900/10 blur-[120px] rounded-full" />
-
-        {/* GRID */}
-        <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-[size:70px_70px]" />
-
-      </div>
-
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
 
         {/* HEADER */}

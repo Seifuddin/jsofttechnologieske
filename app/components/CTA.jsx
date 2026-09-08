@@ -23,7 +23,7 @@ export default function CTA() {
         </p>
 
         {/* Heading */}
-        <h2 className="px-4 text-2xl md:text-3xl font-semibold leading-snug">
+        <h2 className="px-4 text-3xl md:text-4xl font-semibold leading-snug">
           Need reliable IT 
           <span className="text-blue-500"> or security solutions?</span>
         </h2>
@@ -35,12 +35,12 @@ export default function CTA() {
         </p>
 
         {/* Buttons */}
-        <div className="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
+        <div className="mt-7 flex flex-row gap-3 justify-center">
 
           <a
             href="/contacts"
             className="
-              px-7 py-2.5 rounded-full
+              px-7 py-2.5 rounded -full
               bg-orange-600 text-white text-sm font-medium
               hover:bg-amber-500 hover:text-black
               transition
@@ -52,7 +52,7 @@ export default function CTA() {
           <a
             href="/services"
             className="
-              px-7 py-2.5 rounded-full
+              px-7 py-2.5 rounded -full
               border border-white/20 text-white/70 text-sm
               hover:border-amber-400 hover:text-white
               transition

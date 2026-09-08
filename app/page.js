@@ -8,6 +8,7 @@ import SystemStatus from "./components/SystemStatus";
 import CreativeShowcase from "./components/Media";
 import GraphicDesignServices from "./components/Graphics";
 import NetworkingServices from "./components/Networking";
+import StatsSection from "./components/Stats";
 
 export const metadata = {
   title: "CCTV Installation, Networking & IT Support in Kenya",
@@ -86,7 +87,7 @@ export default function Home() {
 
         {/* CORE SERVICES (MOST IMPORTANT) */}
         <NetworkingServices />
-        <SystemStatus />
+        <StatsSection />
         <ServicesSection />
         <CTASection />
         <GraphicDesignServices />
