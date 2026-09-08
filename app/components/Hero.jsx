@@ -146,14 +146,14 @@ export default function Hero() {
         <div className="w-full grid lg:grid-cols-12 gap-12 items-center py-20">
 
           {/* LEFT CONTENT - NOW 6 COLUMNS INSTEAD OF 7 (SMALLER) */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-4">
 
             {/* 🔮 ANOMALY BADGE - Futuristic Status Indicator */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="inline-flex items-center gap-4"
+              className="inline-flex items-center gap-4 mt-4"
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse" />
@@ -177,12 +177,12 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="space-y-3"
             >
-              <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[0.9] tracking-tight">
+              <h1 className="text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-[0.9] tracking-tight">
                 <span className="block">Engineering</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500">
                   Digital Excellence
                 </span>
-                <span className="block text-4xl md:text-4xl lg:text-5xl font-light text-orange-400 mt-2">
+                <span className="block text-5xl md:text-5xl lg:text-5xl font-light text-orange-400 mt-2">
                   for the Future
                 </span>
               </h1>
@@ -193,7 +193,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-base md:text-lg text-white/60 max-w-lg leading-relaxed font-light"
+              className="text-basemd: text-lg text-white/60 max-w-lg leading-relaxed font-light"
             >
               Where cutting-edge technology meets uncompromising security. 
               We architect, build, and protect the digital infrastructure 
