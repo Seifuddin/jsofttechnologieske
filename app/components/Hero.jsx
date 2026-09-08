@@ -177,12 +177,12 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="space-y-3"
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[0.9] tracking-tight">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[0.9] tracking-tight">
                 <span className="block">Engineering</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500">
                   Digital Excellence
                 </span>
-                <span className="block text-3xl md:text-4xl lg:text-5xl font-light text-orange-400 mt-2">
+                <span className="block text-4xl md:text-4xl lg:text-5xl font-light text-orange-400 mt-2">
                   for the Future
                 </span>
               </h1>
@@ -226,7 +226,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-wrap gap-6 pt-2"
+              className="flex flex-wrap gap-3 pt-2"
             >
               {[
                 { value: "99.9%", label: "Uptime Guarantee", icon: ShieldCheck },
@@ -266,7 +266,7 @@ export default function Hero() {
                 {/* Image with floating elements */}
                 <div className="relative aspect-[4/3]">
                   <Image
-                    src="/images/technicien-soutien-informatique-1.jpg"
+                    src="/images/aboutus.avif"
                     alt="Next-gen IT infrastructure"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
