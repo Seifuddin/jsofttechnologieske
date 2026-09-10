@@ -203,7 +203,7 @@ function ServiceCard({ service, index, onView }) {
       viewport={{ once: true }}
       transition={{ delay: index * 0.08 }}
       whileHover={{ y: -6 }}
-      className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300"
+      className="group bg-white rounded border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300"
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
@@ -251,11 +251,11 @@ function ServiceCard({ service, index, onView }) {
         <div className="mt-4 flex items-center gap-2 pt-4 border-t border-gray-100">
           <button
             onClick={() => onView(service)}
-            className={`flex-1 bg-gradient-to-r ${service.color} text-white text-xs font-medium py-2 rounded-lg hover:shadow-lg transition`}
+            className={`flex-1 bg-gradient-to-r ${service.color} text-white text-xs font-medium py-2 rounded hover:shadow-lg transition`}
           >
             View Details
           </button>
-          <button className="p-2 rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition">
+          <button className="p-2 rounded border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition">
             <ArrowRight size={16} className="text-gray-600" />
           </button>
         </div>
@@ -301,7 +301,7 @@ export default function ServicesSection() {
             </span>
           </h2>
 
-          <p className="mt-4 text-gray-500 text-sm md:text-base leading-relaxed">
+          <p className="mt-4 text-gray-500 text-base leading-relaxed">
             End-to-end IT, security, and creative solutions built for modern businesses.
             We deliver excellence across every service we offer.
           </p>
