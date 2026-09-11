@@ -63,12 +63,12 @@ export default function NetworkSystemWorldClass() {
             className="lg:col-span-6"
           >
             <div className="relative rounded overflow-hidden border border-gray-200 bg-white shadow-sm">
-              <div className="relative aspect-[4/3]">
+              <div className="relative aspect-[6/5]">
                 <Image
                   src="/images/341237~2.jpg"
                   alt="Network Infrastructure"
                   fill
-                  sizes="(max-width: 768px) 100vw, 60vw"
+                  sizes="(max-width: 800px) 100vw, 80vw"
                   className="object-cover"
                   quality={85}
                 />
@@ -204,10 +204,10 @@ export default function NetworkSystemWorldClass() {
                     {feature.icon}
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-900">
+                    <h4 className="text-base font-semibold text-gray-900">
                       {feature.title}
                     </h4>
-                    <p className="text-sm text-gray-500">{feature.desc}</p>
+                    <p className="text-base text-gray-500">{feature.desc}</p>
                   </div>
                 </motion.div>
               ))}
