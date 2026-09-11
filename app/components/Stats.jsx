@@ -70,7 +70,7 @@ export default function StatsSection() {
       
       {/* Shining Blue & Orange Glows - Smaller */}
       <div className="absolute top-0 left-1/4 w-[300px] h-[300px] bg-blue-500/30 rounded-full blur-[120px] animate-pulse" />
-      <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-orange-500/25 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-blue-500/25 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1s' }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-400/10 rounded-full blur-[150px]" />
       
       {/* Shining Stars / Particles - Client only */}
@@ -113,7 +113,7 @@ export default function StatsSection() {
         />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-6">
         {/* Header - Compact */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
@@ -125,13 +125,13 @@ export default function StatsSection() {
             <span className="absolute -inset-1 blur-xl bg-orange-500/20 rounded-full" />
             <span className="relative">Our Impact</span>
           </p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 text-white relative">
-            Trusted By Businesses Across{" "}
+          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold mt-2 text-white relative">
+            Trusted By Businesses{" "}
             <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
-              Kenya
+               Across Kenya
             </span>
           </h2>
-          <p className="text-blue-200/50 max-w-xl mx-auto mt-2 text-sm leading-relaxed">
+          <p className="text-blue-200/50 max-w-xl mx-auto mt-2 text-base leading-relaxed">
             Delivering enterprise-grade IT solutions with proven results.
           </p>
         </motion.div>

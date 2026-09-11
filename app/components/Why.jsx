@@ -22,46 +22,46 @@ import {
 export default function WhyChooseUs() {
   const features = [
     {
-      icon: <ShieldCheck className="w-4 h-4 text-blue-600" />,
+      icon: <ShieldCheck className="w-6 h-6 text-orange-600" />,
       title: "Security-First",
       description: "Advanced protection systems for your business data.",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-100",
+      bgColor: "bg-orange-100",
+      borderColor: "border-orange-200",
     },
     {
-      icon: <Activity className="w-4 h-4 text-orange-500" />,
+      icon: <Activity className="w-6 h-6 text-orange-500" />,
       title: "99.9% Uptime",
       description: "Reliable infrastructure for business continuity.",
-      bgColor: "bg-orange-50",
-      borderColor: "border-orange-100",
+      bgColor: "bg-orange-100",
+      borderColor: "border-orange-200",
     },
     {
-      icon: <Lock className="w-4 h-4 text-blue-600" />,
+      icon: <Lock className="w-6 h-6 text-orange-600" />,
       title: "Controlled Access",
       description: "Secure environments with monitored systems.",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-100",
+      bgColor: "bg-orange-100",
+      borderColor: "border-orange-200",
     },
     {
-      icon: <Zap className="w-4 h-4 text-orange-500" />,
+      icon: <Zap className="w-6 h-6 text-orange-500" />,
       title: "Fast Deployment",
       description: "Rapid implementation with minimal disruption.",
-      bgColor: "bg-orange-50",
-      borderColor: "border-orange-100",
+      bgColor: "bg-orange-100",
+      borderColor: "border-orange-200",
     },
     {
-      icon: <Headphones className="w-4 h-4 text-blue-600" />,
+      icon: <Headphones className="w-6 h-6 text-orange-600" />,
       title: "24/7 Support",
       description: "Round-the-clock expert technical assistance.",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-100",
+      bgColor: "bg-orange-100",
+      borderColor: "border-orange-200",
     },
     {
       icon: <Server className="w-4 h-4 text-orange-500" />,
       title: "Enterprise Grade",
       description: "Built like critical infrastructure, not ordinary IT.",
-      bgColor: "bg-orange-50",
-      borderColor: "border-orange-100",
+      bgColor: "bg-orange-100",
+      borderColor: "border-orange-200",
     },
   ];
 
@@ -90,14 +90,14 @@ export default function WhyChooseUs() {
             </span>
           </div>
 
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
             Secure, Stable &{" "}
             <span className="bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">
               Reliable
             </span>
           </h2>
 
-          <p className="mt-2 text-gray-500 text-base max-w-xl mx-auto leading-relaxed">
+          <p className="mt-2 text-gray-500 text-base font-medium max-w-xl mx-auto leading-relaxed">
             We eliminate downtime, strengthen security, and build dependable infrastructure.
           </p>
         </motion.div>
@@ -220,18 +220,19 @@ export default function WhyChooseUs() {
                     y: -3,
                     transition: { duration: 0.2 }
                   }}
-                  className={`group bg-white rounded border ${feature.borderColor} p-2 shadow-sm hover:shadow-md transition-all duration-300`}
+                  className={`group flex items-start gap-3 bg-white rounded border ${feature.borderColor} p-2 shadow-sm hover:shadow-md transition-all duration-300`}
                 >
-                  <div className={`inline-flex p-1.5 rounded ${feature.bgColor} mb-1.5 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`inline-flex p-1.5 rounded ${feature.bgColor} group-hover:scale-110 transition-transform duration-300 shrink-0`}>
                     {feature.icon}
-                    
                   </div>
-                  <h3 className="text-base font-semibold text-gray-900">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-0.5 text-[13px] text-gray-500 leading-relaxed">
-                    {feature.description}
-                  </p>
+                  <div>
+                    <h3 className="text-base font-semibold text-gray-900">
+                      {feature.title}
+                    </h3>
+                    <p className="mt-0.5 text-[13px] text-gray-500 leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -247,19 +248,19 @@ export default function WhyChooseUs() {
           className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap justify-center gap-4 md:gap-6"
         >
           <div className="flex items-center gap-1.5 text-[10px] text-gray-400">
-            <Globe size={12} className="text-blue-600" />
+            <Globe size={14} className="text-blue-600" />
             <span>Kenya & Beyond</span>
           </div>
           <div className="flex items-center gap-1.5 text-[10px] text-gray-400">
-            <ShieldCheck size={12} className="text-orange-500" />
+            <ShieldCheck size={14} className="text-orange-500" />
             <span>ISO 27001</span>
           </div>
           <div className="flex items-center gap-1.5 text-[10px] text-gray-400">
-            <Users size={12} className="text-blue-600" />
+            <Users size={14} className="text-blue-600" />
             <span>350+ Clients</span>
           </div>
           <div className="flex items-center gap-1.5 text-[10px] text-gray-400">
-            <Star size={12} className="text-orange-500" />
+            <Star size={14} className="text-orange-500" />
             <span>100+ Reviews</span>
           </div>
         </motion.div>

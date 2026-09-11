@@ -23,7 +23,7 @@ export default function CinematicStudioCompact() {
             Visual Production Studio
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mt-2">
+          <h2 className="text-3xl md:text-4xl font-semibold mt-2">
             Photography &{" "}
             <span className="text-blue-500">Cinematic Videography</span>
           </h2>

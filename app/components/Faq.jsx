@@ -65,7 +65,7 @@ export default function FAQ() {
           </div>
 
           {/* TITLE */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
 
             Frequently Asked
             <span className="text-blue-950"> Questions</span>
@@ -73,7 +73,7 @@ export default function FAQ() {
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="mt-3 text-gray-700 max-w-2xl mx-auto leading-relaxed textsm">
+          <p className="mt-3 text-gray-700 max-w-2xl mx-auto leading-relaxed text-base">
             Answers to the most common questions about our IT,
             networking, CCTV, branding, and technical support services.
           </p>
@@ -96,7 +96,7 @@ export default function FAQ() {
                     type: "spring",
                   },
                 }}
-                className={`rounded -2xl border-b border-orange-200 backdrop-blur-xl overflow-hidden transition-all duration-300 ${
+                className={`rounded border-b border-gray-200 backdrop-blur-xl overflow-hidden transition-all duration-300 ${
                   isOpen
                     ? "bg-transparent shadowlg border-orange-200"
                     : "hover:bg-white border-gray-200 hover:border-orange-200"
@@ -124,7 +124,7 @@ export default function FAQ() {
                     </div>
 
                     {/* QUESTION */}
-                    <h3 className="textsm md:text-lg fontsemibold text-gray-900 leading-relaxed">
+                    <h3 className="text-lg fontmedium text-gray-900 leading-relaxed">
                       {item.q}
                     </h3>
 
@@ -163,7 +163,7 @@ export default function FAQ() {
                           <div className="h-px w-full bg-gradient-to-r from-orange-200 to-transparent mb-2" />
 
                           {/* ANSWER TEXT */}
-                          <p className="text-sm text-gray-700 leading-relaxed">
+                          <p className="text-base text-gray-700 leading-relaxed">
                             {item.a}
                           </p>
 

@@ -24,7 +24,7 @@ export default function NetworkSystemWorldClass() {
 
   return (
     <section className="py-12 md:py-16 bg-gray-50 text-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         
         {/* Header - Compact */}
         <motion.div
@@ -40,12 +40,12 @@ export default function NetworkSystemWorldClass() {
             </span>
           </div>
 
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight">
             Networks That Power{" "}
             <span className="text-orange-500">Modern Enterprises</span>
           </h2>
 
-          <p className="text-gray-500 max-w-xl mx-auto mt-2 text-sm leading-relaxed">
+          <p className="text-gray-500 max-w-xl mx-auto mt-2 text-base leading-relaxed">
             We design and maintain secure, scalable systems that operate silently
             and keep your business alive 24/7.
           </p>
@@ -60,9 +60,9 @@ export default function NetworkSystemWorldClass() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-7"
+            className="lg:col-span-6"
           >
-            <div className="relative rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+            <div className="relative rounded overflow-hidden border border-gray-200 bg-white shadow-sm">
               <div className="relative aspect-[4/3]">
                 <Image
                   src="/images/341237~2.jpg"
@@ -158,7 +158,7 @@ export default function NetworkSystemWorldClass() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="lg:col-span-5 space-y-4"
+            className="lg:col-span-6 space-y-4"
           >
             {/* Headline */}
             <div>
@@ -166,7 +166,7 @@ export default function NetworkSystemWorldClass() {
                 We Build Networks{" "}
                 <span className="text-orange-500">That Never Fail</span>
               </h3>
-              <p className="text-gray-500 mt-2 text-sm leading-relaxed">
+              <p className="text-gray-500 mt-2 text-base leading-relaxed">
                 From small offices to enterprise infrastructure, we design secure,
                 stable, high-performance networks that keep your business running.
               </p>
@@ -176,17 +176,17 @@ export default function NetworkSystemWorldClass() {
             <div className="space-y-2">
               {[
                 {
-                  icon: <Wifi size={14} className="text-orange-500" />,
+                  icon: <Wifi size={16} className="text-orange-500" />,
                   title: "Stable Connectivity",
                   desc: "High-performance LAN/WAN setups for uninterrupted communication.",
                 },
                 {
-                  icon: <Server size={14} className="text-orange-500" />,
+                  icon: <Server size={16} className="text-orange-500" />,
                   title: "Server Infrastructure",
                   desc: "Reliable servers for business operations and scalability.",
                 },
                 {
-                  icon: <ShieldCheck size={14} className="text-orange-500" />,
+                  icon: <ShieldCheck size={16} className="text-orange-500" />,
                   title: "Secure Systems",
                   desc: "Protection against threats, downtime, and unauthorized access.",
                 },
@@ -198,16 +198,16 @@ export default function NetworkSystemWorldClass() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 + index * 0.08 }}
                   whileHover={{ x: 4 }}
-                  className="flex gap-3 p-2.5 rounded-lg border border-gray-100 bg-white hover:border-orange-200 hover:shadow-sm transition-all duration-300"
+                  className="flex gap-3 p-2.5 rounded border border-gray-200 bg-white hover:border-orange-200 hover:shadow-sm transition-all duration-300"
                 >
-                  <div className="flex-shrink-0 mt-0.5 p-1.5 rounded-lg bg-orange-50 border border-orange-100">
+                  <div className="flex-shrink-0 mt-0.5 p-2 rounded bg-orange-50 border border-orange-100">
                     {feature.icon}
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold text-gray-900">
+                    <h4 className="text-sm font-semibold text-gray-900">
                       {feature.title}
                     </h4>
-                    <p className="text-xs text-gray-500">{feature.desc}</p>
+                    <p className="text-sm text-gray-500">{feature.desc}</p>
                   </div>
                 </motion.div>
               ))}

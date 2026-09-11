@@ -2,24 +2,23 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { 
-  CheckCircle2, 
-  Palette, 
-  Printer, 
-  Share2, 
+import {
+  Palette,
+  Printer,
+  Share2,
   Sparkles,
   ArrowRight,
   Star,
   Eye,
-  Zap
+  Zap,
 } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/effect-fade";
+import "swiper/css/effect-coverflow";
 
 export default function GraphicDesignServices() {
   const products = [
@@ -44,7 +43,8 @@ export default function GraphicDesignServices() {
     {
       title: "Posters",
       desc: "Bold, eye-catching posters for events, promotions, and campaigns.",
-      image: "/images/saturdays-party-flyer-design-template-27e1d93f7f67088f439805c8cb5e8d5a_5947cd1b-85b6-43aa-b787-1e90ff4b32ca_screen.png",
+      image:
+        "/images/saturdays-party-flyer-design-template-27e1d93f7f67088f439805c8cb5e8d5a_5947cd1b-85b6-43aa-b787-1e90ff4b32ca_screen.png",
       category: "Print",
     },
     {
@@ -56,7 +56,8 @@ export default function GraphicDesignServices() {
     {
       title: "Social Media Designs",
       desc: "Creative visuals optimized for modern digital platforms.",
-      image: "/images/social-media-template-business-agency-digital-marketing-business-sale-promo-furniture-fashion-advertising-promotional-banner-vector-frame_25346-662.avif",
+      image:
+        "/images/social-media-template-business-agency-digital-marketing-business-sale-promo-furniture-fashion-advertising-promotional-banner-vector-frame_25346-662.avif",
       category: "Digital",
     },
   ];
@@ -80,90 +81,81 @@ export default function GraphicDesignServices() {
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-gray-50 text-gray-900 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6">
-        
-        {/* Header - Center Aligned */}
+    <section className="relative py-12 md:py-16 bg-gray-50 text-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+        {/* ============ HEADER ============ */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-8 md:mb-10"
         >
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-orange-50 border border-orange-100 mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 mb-3">
             <Sparkles size={12} className="text-orange-500" />
-            <span className="text-[9px] font-semibold text-orange-600 uppercase tracking-wider">
+            <span className="text-[10px] font-semibold text-orange-600 uppercase tracking-wider">
               Creative Design Studio
             </span>
           </div>
 
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-            We Don't Just Design —{" "}
+          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
+            Graphic {" "}
             <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              We Build Brand Experiences
+              Design
             </span>
           </h2>
 
-          <p className="mt-2 text-gray-500 text-sm max-w-xl mx-auto leading-relaxed">
-            From business cards to large-scale branding materials,
-            we create visuals that make businesses unforgettable.
+          <p className="mt-3 text-gray-500 text-base max-w-xl mx-auto leading-relaxed">
+            From business cards to large-scale branding materials, we create
+            visuals that make businesses unforgettable.
           </p>
         </motion.div>
 
-        {/* Main Grid - Compact */}
-        <div className="grid lg:grid-cols-12 gap-6 items-start">
-          
-          {/* Left - Slider */}
+        {/* ============ MAIN GRID ============ */}
+        <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+          {/* ---- LEFT: SLIDER ---- */}
           <motion.div
-            initial={{ opacity: 0, x: -15 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-7"
+            className="lg:col-span-7 min-w-0"
           >
-            <div className="relative rounded-xl overflow-hidden shadow-lg shadow-orange-500/10">
+            <div className="relative rounded overflow-hidden shadow-xl shadow-orange-500/10 ring-1 ring-gray-900/5 bg-gray-900">
               <Swiper
-                modules={[Autoplay, Pagination, EffectFade]}
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ 
-                  clickable: true,
-                  dynamicBullets: true,
-                }}
-                effect="fade"
+                modules={[Autoplay, Pagination]}
+                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                pagination={{ clickable: true, dynamicBullets: true }}
                 loop={true}
-                className="w-full"
+                className="w-full [&_.swiper-pagination-bullet]:bg-white/60 [&_.swiper-pagination-bullet-active]:bg-orange-500"
               >
                 {products.map((item, i) => (
                   <SwiperSlide key={i}>
-                    <div className="relative w-full h-[260px] sm:h-[300px] md:h-[360px]">
+                    <div className="relative w-full aspect-[4/3] sm:aspect-[16/10]">
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        sizes="(max-width: 1024px) 100vw, 60vw"
                         className="object-cover"
                         priority={i === 0}
                       />
 
                       {/* Gradient Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                      
-                      {/* Decorative Line */}
-                      <div className="absolute top-0 left-0 w-0.5 h-16 bg-gradient-to-b from-orange-500 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+
+                      {/* Accent Line */}
+                      <div className="absolute top-0 left-0 w-1 h-16 bg-gradient-to-b from-orange-500 to-transparent" />
 
                       {/* Content */}
-                      <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-white">
-                        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-orange-500/90 backdrop-blur-sm text-[8px] font-medium uppercase tracking-wider mb-2">
+                      <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7 text-white">
+                        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-500/90 backdrop-blur-sm text-[9px] font-semibold uppercase tracking-wider mb-2.5">
                           <Star size={10} />
                           {item.category}
                         </div>
-                        <h3 className="text-lg md:text-xl font-bold">
+                        <h3 className="text-lg md:text-2xl font-bold leading-tight">
                           {item.title}
                         </h3>
-                        <p className="mt-1 text-xs text-gray-200 max-w-md leading-relaxed">
+                        <p className="mt-1.5 text-xs md:text-sm text-gray-200/90 max-w-md leading-relaxed">
                           {item.desc}
                         </p>
                       </div>
@@ -174,13 +166,13 @@ export default function GraphicDesignServices() {
             </div>
           </motion.div>
 
-          {/* Right - Content - Compact */}
+          {/* ---- RIGHT: CONTENT ---- */}
           <motion.div
-            initial={{ opacity: 0, x: 15 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="lg:col-span-5 space-y-4"
+            className="lg:col-span-5 min-w-0 flex flex-col"
           >
             {/* Headline */}
             <div>
@@ -188,32 +180,33 @@ export default function GraphicDesignServices() {
                 Design That Shapes{" "}
                 <span className="text-orange-500">Business Perception</span>
               </h3>
-              <p className="mt-2 text-gray-500 text-sm leading-relaxed">
-                Great design influences trust, recognition, and customer attention.
-                We craft visuals that communicate professionalism and impact.
+              <p className="mt-2.5 text-gray-500 text-sm leading-relaxed">
+                Great design influences trust, recognition, and customer
+                attention. We craft visuals that communicate professionalism
+                and impact.
               </p>
             </div>
 
-            {/* Design Pillars - Compact */}
-            <div className="space-y-2">
+            {/* Pillars */}
+            <div className="mt-5 space-y-2.5">
               {pillars.map((pillar, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 8 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 + index * 0.08 }}
-                  whileHover={{ x: 4 }}
-                  className="group flex gap-3 p-2.5 rounded-lg border border-gray-100 bg-white hover:border-orange-200 hover:shadow-sm transition-all duration-300"
+                  whileHover={{ x: 3 }}
+                  className="group flex gap-3 p-3 rounded border border-gray-100 bg-white hover:border-orange-200 hover:shadow-sm transition-all duration-300"
                 >
-                  <div className="flex-shrink-0 p-1.5 rounded-lg bg-orange-50 border border-orange-100 group-hover:bg-orange-100 transition">
+                  <div className="flex-shrink-0 p-2 rounded bg-orange-50 border border-orange-100 group-hover:bg-orange-100 transition">
                     {pillar.icon}
                   </div>
-                  <div>
-                    <h4 className="text-xs font-semibold text-gray-900">
+                  <div className="min-w-0">
+                    <h4 className="text-sm font-semibold text-gray-900">
                       {pillar.title}
                     </h4>
-                    <p className="text-[10px] text-gray-500 mt-0.5 leading-relaxed">
+                    <p className="text-sm text-gray-500 mt-0.5 leading-relaxed">
                       {pillar.desc}
                     </p>
                   </div>
@@ -221,17 +214,20 @@ export default function GraphicDesignServices() {
               ))}
             </div>
 
-            {/* CTA & Trust Badges - Compact */}
-            <div className="space-y-3 pt-1">
+            {/* CTA + Trust */}
+            <div className="mt-auto pt-5 space-y-4">
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                <button className="group inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:shadow-lg hover:shadow-orange-500/30 text-white text-xs font-medium rounded-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
+                <button className="group inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-orange-600 hover:shadow-lg hover:shadow-orange-500/30 text-white text-sm font-medium rounded transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
                   <span>Explore Design Services</span>
-                  <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
+                  <ArrowRight
+                    size={15}
+                    className="transition-transform group-hover:translate-x-1"
+                  />
                 </button>
               </motion.div>
 
@@ -240,67 +236,69 @@ export default function GraphicDesignServices() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
-                className="flex flex-wrap gap-3 pt-1 border-t border-gray-100"
+                className="flex flex-wrap gap-x-4 gap-y-2 pt-3 border-t border-gray-100"
               >
-                <div className="flex items-center gap-1.5">
-                  <Eye size={12} className="text-orange-400" />
-                  <span className="text-[9px] text-gray-400">100+ Projects</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <Star size={12} className="text-orange-400" />
-                  <span className="text-[9px] text-gray-400">98% Satisfaction</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <Zap size={12} className="text-orange-400" />
-                  <span className="text-[9px] text-gray-400">Fast Turnaround</span>
-                </div>
+                {[
+                  { icon: Eye, label: "100+ Projects" },
+                  { icon: Star, label: "98% Satisfaction" },
+                  { icon: Zap, label: "Fast Turnaround" },
+                ].map(({ icon: Icon, label }, i) => (
+                  <div key={i} className="flex items-center gap-1.5">
+                    <Icon size={13} className="text-orange-400" />
+                    <span className="text-[11px] text-gray-500 font-medium">
+                      {label}
+                    </span>
+                  </div>
+                ))}
               </motion.div>
             </div>
           </motion.div>
         </div>
 
-        {/* Portfolio Grid Preview - Compact */}
+        {/* ============ PORTFOLIO GRID ============ */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mt-8 pt-6 border-t border-gray-200"
+          className="mt-10 pt-8 border-t border-gray-200"
         >
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-end justify-between mb-4">
             <div>
-              <p className="text-[8px] font-semibold text-orange-500 uppercase tracking-wider">
+              <p className="text-[10px] font-semibold text-orange-500 uppercase tracking-wider">
                 Portfolio
               </p>
-              <h3 className="text-sm font-bold text-gray-900">
+              <h3 className="text-base md:text-lg font-bold text-gray-900 mt-0.5">
                 Our Recent Work
               </h3>
             </div>
-            <button className="text-[10px] text-orange-500 font-medium hover:text-orange-600 transition flex items-center gap-1">
-              View All <ArrowRight size={12} />
+            <button className="text-xs text-orange-500 font-medium hover:text-orange-600 transition flex items-center gap-1">
+              View All <ArrowRight size={13} />
             </button>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {products.slice(0, 4).map((item, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 + i * 0.06 }}
-                whileHover={{ scale: 1.05 }}
-                className="relative aspect-square rounded-lg overflow-hidden cursor-pointer group bg-gray-100"
+                className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group ring-1 ring-gray-900/5 bg-gray-100"
               >
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-1.5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-[8px] font-medium truncate">{item.title}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-2.5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-[11px] font-medium truncate">
+                    {item.title}
+                  </p>
                 </div>
               </motion.div>
             ))}
