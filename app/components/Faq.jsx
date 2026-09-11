@@ -124,7 +124,7 @@ export default function FAQ() {
                     </div>
 
                     {/* QUESTION */}
-                    <h3 className="text-lg fontmedium text-gray-900 leading-relaxed">
+                    <h3 className="text-lg font-medium text-gray-900 leading-relaxed">
                       {item.q}
                     </h3>
 
@@ -163,7 +163,7 @@ export default function FAQ() {
                           <div className="h-px w-full bg-gradient-to-r from-orange-200 to-transparent mb-2" />
 
                           {/* ANSWER TEXT */}
-                          <p className="text-base text-gray-700 leading-relaxed">
+                          <p className="textbase text-gray-700 leading-relaxed">
                             {item.a}
                           </p>
 

@@ -288,7 +288,7 @@ export default function ServicesSection() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 mb-4">
-            <Sparkles size={14} className="text-blue-600" />
+            <Sparkles size={14} className="text-orange-600" />
             <span className="text-[10px] font-semibold text-orange-600 uppercase tracking-wider">
               Our Services
             </span>

@@ -203,10 +203,10 @@ export default function GraphicDesignServices() {
                     {pillar.icon}
                   </div>
                   <div className="min-w-0">
-                    <h4 className="text-sm font-semibold text-gray-900">
+                    <h4 className="text-base font-semibold text-gray-900">
                       {pillar.title}
                     </h4>
-                    <p className="text-sm text-gray-500 mt-0.5 leading-relaxed">
+                    <p className="text-base text-gray-500 mt-0.5 leading-relaxed">
                       {pillar.desc}
                     </p>
                   </div>

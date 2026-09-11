@@ -9,7 +9,7 @@ import {
 
 export default function Call() {
   return (
-    <section className="relative py-10 overflow-hidden">
+    <section className="relative py10 overflow-hidden">
 
       {/* BACKGROUND IMAGE */}
       <div
@@ -35,7 +35,7 @@ export default function Call() {
       {/* GRID TEXTURE */}
       <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:70px_70px]" />
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
+      <div className="relativemax-w-5xlmx-auto px-4sm:px-6">
 
         {/* CARD */}
         <motion.div
@@ -43,14 +43,14 @@ export default function Call() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="relative overflow-hidden rounded-xl border border-white/10 bg-white/10 backdrop-blur-xl shadow-2xl"
+          className="relative overflow-hiddenborderborder-white/10 bg-white/10 backdrop-blur-xl shadow-2xl"
         >
 
           {/* INNER CONTENT */}
-          <div className="relative px-6 md:px-12 py-7 md:py-9 text-center">
+          <div className="relative px-3 md:px-7 py-7 md:py-9 text-center">
 
             {/* TOP BADGE */}
-            <div className="flex justify-center mb-6">
+            <div className="hidden flex justify-center mb-6">
 
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 backdrop-blur-md">
 
@@ -105,7 +105,7 @@ export default function Call() {
             </p>
 
             {/* INFO ITEMS */}
-            <div className="mt-4 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+            <div className="hidden md:mt-4 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
 
               {/* ITEM */}
               <div className="flex items-center justify-center gap-2 text-gray-200 text-sm">
@@ -132,7 +132,7 @@ export default function Call() {
 
               <a
                 href="tel:+254759177042"
-                className="group inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-2 rounded-2xl font-semibold shadow-xl shadow-green-500/20 transition-all duration-300 hover:scale-[1.03]"
+                className="group inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-2 rounded font-semibold shadow-xl shadow-green-500/20 transition-all duration-300 hover:scale-[1.03]"
               >
 
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10">
