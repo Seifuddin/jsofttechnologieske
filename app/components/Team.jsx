@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Globe, ShieldCheck } from "lucide-react";
+import { Mail, Globe, ShieldCheck, Link2, ArrowUpRight } from "lucide-react";
 
 export default function TeamSection() {
   const team = [
@@ -10,169 +10,189 @@ export default function TeamSection() {
       role: "Founder & Network Engineer",
       desc: "Enterprise networking & infrastructure architecture specialist.",
       img: "/images/139439.jpg",
+      accent: "from-orange-500 to-orange-600",
     },
     {
       name: "Muriithi Nguru",
       role: "Web Developer & Software Engineer",
       desc: "World-class web development and software engineering specialist.",
       img: "/images/1765669389666~2.jpg",
+      accent: "from-blue-500 to-blue-600",
     },
     {
       name: "Brin Tanui",
       role: "CCTV Systems Lead",
       desc: "Security systems design, surveillance & monitoring solutions.",
       img: "/images/IMG-20230803-WA0030.jpg",
+      accent: "from-orange-500 to-orange-600",
     },
     {
       name: "Swibe S. Paul",
       role: "IT Support Engineer",
       desc: "Fast-response IT support & system troubleshooting expert.",
       img: "/images/IMG-20230803-WA0025.jpg",
+      accent: "from-blue-500 to-blue-600",
     },
     {
       name: "Brian Odhiambo",
       role: "Creative Media Designer",
       desc: "Branding, motion graphics & digital experience designer.",
       img: "/images/IMG-20231203-WA0021.jpg",
+      accent: "from-orange-500 to-orange-600",
     },
   ];
 
-  const leader = team[0];
-  const nguru = team[1];
-  const others = team.slice(2);
+  const leaders = team.slice(0, 2);
+  const members = team.slice(2);
 
   return (
-    <section className="relative bg-amber-50 py-16 overflow-hidden">
-      {/* background glow */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[-100px] left-[-60px] w-[220px] h-[220px] bg-orange-200/40 blur-3xl rounded-full" />
-        <div className="absolute bottom-[-100px] right-[-60px] w-[240px] h-[240px] bg-cyan-200/30 blur-3xl rounded-full" />
-      </div>
+    <section className="relative bg-white to-amber-50/40 py-16 md:py-20">
 
-      <div className="relative max-w-7xl mx-auto px-6">
-
-        {/* HEADER */}
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        {/* ============ HEADER ============ */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-8"
+          className="text-center max-w-2xl mx-auto mb-12"
         >
-          <div className="flex items-center justify-center gap-2 text-orange-600 text-[11px] fontsemibold uppercase tracking-widest">
-            <ShieldCheck className="w-4 h-4" />
-            Meet The Team
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 mb-4">
+            <ShieldCheck className="w-3.5 h-3.5 text-orange-500" />
+            <span className="text-[10px] font-semibold text-orange-600 uppercase tracking-widest">
+              Meet The Team
+            </span>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mt-2">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
             The Minds Behind{" "}
-            <span className="text-blue-900">JSoft Technologies</span>
+            <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+              JSoft Technologies
+            </span>
           </h2>
 
-          <p className="text-gray-700 mt-2 text-xs max-w-xl mx-auto">
-            Engineers, designers, and IT experts building reliable digital systems.
+          <p className="mt-3 text-sm md:text-base text-gray-500 max-w-xl mx-auto leading-relaxed">
+            Engineers, designers, and IT experts building reliable digital
+            systems.
           </p>
         </motion.div>
 
-        {/* LEADER (SMALLER) */}
-        <div className="grid md:grid-cols-2 lggrid-cols-3 gap-4">
-        <motion.div
-          whileHover={{ scale: 1.01 }}
-          className="bg-white w-1/2h-52 rounded -2xl border border-orange-100 shadowsm overflow-hidden flex mb-8"
-        >
-          <div className="w-1/2 h-52">
-            <img
-              src={leader.img}
-              alt={leader.name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="p-2 w-1/2 flex flex-col justify-center">
-            <h3 className="text-lg font-bold text-blue-950">
-              {leader.name}
-            </h3>
-
-            <p className="text-orange-500 text-xs font-medium">
-              {leader.role}
-            </p>
-
-            <p className="text-gray-600 text-xs mt-2 line-clamp-3">
-              {leader.desc}
-            </p>
-
-            <div className="flex gap-3 mt-4 text-gray-500">
-              <Mail className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
-              <Globe className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          whileHover={{ scale: 1.01 }}
-          className="bg-white w-1/2h-52 rounded -2xl border border-orange-100 shadowsm overflow-hidden flex mb-8"
-        >
-          <div className="w-1/2 h-52">
-            <img
-              src={nguru.img}
-              alt={nguru.name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="p-2 w-1/2 flex flex-col justify-center">
-            <h3 className="text-lg font-bold text-blue-950">
-              {nguru.name}
-            </h3>
-
-            <p className="text-orange-500 text-xs font-medium">
-              {nguru.role}
-            </p>
-
-            <p className="text-gray-600 text-xs mt-2 line-clamp-3">
-              {nguru.desc}
-            </p>
-
-            <div className="flex gap-3 mt-4 text-gray-500">
-              <Mail className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
-              <Globe className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
-            </div>
-          </div>
-        </motion.div>
-        </div>
-
-        {/* TEAM GRID (SMALLER CARDS) */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {others.map((member, index) => (
+        {/* ============ LEADERS (Feature Cards) ============ */}
+        <div className="grid md:grid-cols-2 gap-5 mb-5">
+          {leaders.map((leader, index) => (
             <motion.div
-              key={index}
+              key={leader.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
               whileHover={{ y: -4 }}
-              className="bg-white rounded -xl border border-orange-100 overflow-hidden flex shadowsm"
+              className="group relative bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 overflow-hidden"
             >
-              <div className="h-32 w-1/2">
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              {/* Accent bar */}
+              <div
+                className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${leader.accent}`}
+              />
 
-              <div className="p-3 w-1/2 flex flex-col justify-center">
-                <h3 className="font-bold text-blue-950 text-sm">
-                  {member.name}
-                </h3>
+              <div className="flex flex-col sm:flex-row">
+                {/* Photo */}
+                <div className="relative w-full sm:w-2/5 aspect-square sm:aspect-auto sm:min-h-[220px] shrink-0 overflow-hidden">
+                  <img
+                    src={leader.img}
+                    alt={leader.name}
+                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent sm:bg-gradient-to-r" />
+                </div>
 
-                <p className="text-[11px] text-orange-500 font-medium mt-1">
-                  {member.role}
-                </p>
+                {/* Content */}
+                <div className="flex-1 p-5 flex flex-col justify-center">
+                  <h3 className="text-lg font-bold text-gray-900 leading-tight">
+                    {leader.name}
+                  </h3>
 
-                <p className="text-[11px] text-gray-600 mt-2 line-clamp-2">
-                  {member.desc}
-                </p>
+                  <p className="text-xs font-semibold text-orange-500 mt-1 uppercase tracking-wide">
+                    {leader.role}
+                  </p>
+
+                  <p className="text-xs text-gray-500 mt-3 leading-relaxed line-clamp-3">
+                    {leader.desc}
+                  </p>
+
+                  <div className="flex gap-2 mt-4">
+                    {[Mail, Globe, Link2].map((Icon, i) => (
+                      <button
+                        key={i}
+                        aria-label="social link"
+                        className="p-1.5 rounded-lg bg-gray-50 border border-gray-100 text-gray-500 hover:text-orange-500 hover:border-orange-200 hover:bg-orange-50 transition-colors"
+                      >
+                        <Icon className="w-3.5 h-3.5" />
+                      </button>
+                    ))}
+                  </div>
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
 
+        {/* ============ TEAM GRID ============ */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {members.map((member, index) => (
+            <motion.div
+              key={member.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 + index * 0.08 }}
+              whileHover={{ y: -4 }}
+              className="group relative bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 overflow-hidden"
+            >
+              {/* Photo */}
+              <div className="relative w-full aspect-[4/3] overflow-hidden">
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+                {/* Name overlay on photo */}
+                <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
+                  <h3 className="text-sm font-bold leading-tight">
+                    {member.name}
+                  </h3>
+                  <p className="text-[10px] font-medium text-orange-300 mt-0.5 uppercase tracking-wide">
+                    {member.role}
+                  </p>
+                </div>
+
+                {/* Hover arrow */}
+                <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="p-4">
+                <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
+                  {member.desc}
+                </p>
+
+                <div className="flex gap-2 mt-3 pt-3 border-t border-gray-100">
+                  {[Mail, Globe].map((Icon, i) => (
+                    <button
+                      key={i}
+                      aria-label="social link"
+                      className="p-1 rounded-md text-gray-400 hover:text-orange-500 transition-colors"
+                    >
+                      <Icon className="w-3.5 h-3.5" />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
