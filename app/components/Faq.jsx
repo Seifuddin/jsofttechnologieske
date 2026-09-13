@@ -54,9 +54,9 @@ export default function FAQ() {
 
             <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-orange-200 shadow-sm">
 
-              <HelpCircle className="w-4 h-4 text-orange-500" />
+              <HelpCircle className="w-3 h-3 text-orange-500" />
 
-              <span className="text-[11px] font-semibold tracking-[0.22em] uppercase text-orange-600">
+              <span className="text-[8px] font-semibold tracking-[0.22em] uppercase text-orange-600">
                 Support Center
               </span>
 
@@ -65,10 +65,10 @@ export default function FAQ() {
           </div>
 
           {/* TITLE */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
 
-            Frequently Asked
-            <span className="text-blue-950"> Questions</span>
+            Frequently Asked Questions
+            <span className="text-blue-950"> </span>
 
           </h2>
 

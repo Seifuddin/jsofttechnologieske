@@ -294,10 +294,10 @@ export default function ServicesSection() {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-            What We{" "}
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            What We Do{" "}
             <span className="bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">
-              Do
+              
             </span>
           </h2>
 

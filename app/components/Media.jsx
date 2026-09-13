@@ -24,8 +24,8 @@ export default function CinematicStudioCompact() {
           </p>
 
           <h2 className="text-3xl md:text-4xl font-semibold mt-2">
-            Photography &{" "}
-            <span className="text-blue-500">Cinematic Videography</span>
+            Photography & Cinematic Videography{" "}
+            <span className="text-blue-500"></span>
           </h2>
 
           <p className="text-gray-400 mt-3 max-w-xl mx-auto textsm">

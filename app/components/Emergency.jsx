@@ -86,8 +86,8 @@ export default function Call() {
             {/* TITLE */}
             <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight">
 
-              24/7 Customer Care
-              <span className="text-orange-400"> Service</span>
+              24/7 Customer Care Service
+              <span className="text-orange-400"> </span>
 
             </h2>
 

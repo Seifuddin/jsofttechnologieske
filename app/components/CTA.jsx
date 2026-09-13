@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CTA() {
   return (
-    <section className="relative overflow-hidden py-10 px-6 text-white">
+    <section className="relative overflow-hidden py-20 px-6 text-white">
 
       {/* Background */}
       <div className="absolute inset-0 bg-[#050b1a]" />
@@ -23,13 +23,13 @@ export default function CTA() {
         </p>
 
         {/* Heading */}
-        <h2 className="px-4 text-3xl md:text-4xl font-semibold leading-snug">
-          Need reliable IT 
-          <span className="text-blue-500"> or security solutions?</span>
+        <h2 className="px4 text-3xl md:text-4xl font-semibold leading-snug">
+          Need reliable IT or security solutions?
+          <span className="text-blue-500"> </span>
         </h2>
 
         {/* Subtext */}
-        <p className="px-4 mt-4 text-white/60 textsm leading-relaxed">
+        <p className="px4 mt4 text-white/60 textsm leading-relaxed">
           JSoft Technologies KE delivers secure networking, CCTV systems,
           IT support, and digital solutions that keep your business running smoothly.
         </p>

@@ -90,10 +90,10 @@ export default function WhyChooseUs() {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
-            Secure, Stable &{" "}
+          <h2 className="text-2xl md:text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
+            Secure, Stable & Reliable{" "}
             <span className="bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">
-              Reliable
+              
             </span>
           </h2>
 
@@ -134,7 +134,7 @@ export default function WhyChooseUs() {
         </motion.div>
 
         {/* Main Grid - Compact */}
-        <div className="grid lg:grid-cols-12 gap-4 items-start">
+        <div className="grid lg:grid-cols-12 gap-10 items-start">
           
           {/* Left - Image Card - Compact */}
           <motion.div

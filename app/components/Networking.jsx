@@ -40,9 +40,9 @@ export default function NetworkSystemWorldClass() {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight">
-            Networks That Power{" "}
-            <span className="text-orange-500">Modern Enterprises</span>
+          <h2 className="text-2xl md:text-4xl lg:text-4xl font-bold leading-tight">
+            Networks That Power Modern Enterprises{" "}
+            <span className="text-orange-500"></span>
           </h2>
 
           <p className="text-gray-500 max-w-xl mx-auto mt-2 text-base leading-relaxed">
@@ -162,9 +162,9 @@ export default function NetworkSystemWorldClass() {
           >
             {/* Headline */}
             <div>
-              <h3 className="text-xl md:text-2xl font-bold leading-tight">
-                We Build Networks{" "}
-                <span className="text-orange-500">That Never Fail</span>
+              <h3 className="text-lg md:text-xl font-semibold leading-tight">
+                We Build Networks That Never Fail{" "}
+                <span className="text-orange-500"></span>
               </h3>
               <p className="text-gray-500 mt-2 text-base leading-relaxed">
                 From small offices to enterprise infrastructure, we design secure,

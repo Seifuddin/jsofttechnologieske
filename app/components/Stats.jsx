@@ -125,10 +125,10 @@ export default function StatsSection() {
             <span className="absolute -inset-1 blur-xl bg-orange-500/20 rounded-full" />
             <span className="relative">Our Impact</span>
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold mt-2 text-white relative">
-            Trusted By Businesses{" "}
+          <h2 className="text-2xl md:text-4xl lg:text-4xl font-bold mt-2 text-white relative">
+            Trusted By Businesses Across Kenya{" "}
             <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
-               Across Kenya
+               
             </span>
           </h2>
           <p className="text-blue-200/50 max-w-xl mx-auto mt-2 text-base leading-relaxed">

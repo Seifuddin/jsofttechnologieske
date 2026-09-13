@@ -9,6 +9,7 @@ import CreativeShowcase from "./components/Media";
 import GraphicDesignServices from "./components/Graphics";
 import NetworkingServices from "./components/Networking";
 import StatsSection from "./components/Stats";
+import TrustSection from "./components/Testimonials";
 
 export const metadata = {
   title: "CCTV Installation, Networking & IT Support in Kenya",
@@ -91,10 +92,11 @@ export default function Home() {
         <ServicesSection />
         <CTASection />
         <GraphicDesignServices />
+        <WhyChooseUs />
         <CreativeShowcase />
 
         {/* TRUST BUILDING */}
-        <WhyChooseUs />
+        <TrustSection />
 
         {/* CONVERSION SECTIONS */}
         <Call />
