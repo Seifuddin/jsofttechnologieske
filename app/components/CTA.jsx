@@ -9,7 +9,7 @@ export default function CTA() {
 
       {/* Blue + Amber cinematic glow (JSoft brand) */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(30,64,175,0.35),transparent_55%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(245,158,11,0.18),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(30,64,175,0.35),transparent_60%)]" />
 
       {/* Subtle texture */}
       <div className="absolute inset-0 opacity-10 bg-[url('/images/patterns.png')] bg-cover bg-center" />
@@ -18,12 +18,12 @@ export default function CTA() {
       <div className="relative max-w-2xl mx-auto text-center">
 
         {/* Label */}
-        <p className="text-[10px] tracking-[0.25em] uppercase text-orange-400 mb-4">
+        <p className="text-[8px] tracking-[0.25em] uppercase text-orange-400 mb-4">
           One Action • Real Impact
         </p>
 
         {/* Heading */}
-        <h2 className="px4 text-3xl md:text-4xl font-semibold leading-snug">
+        <h2 className="px4 text-2xl md:text-3xl font-semibold leading-snug">
           Need reliable IT or security solutions?
           <span className="text-blue-500"> </span>
         </h2>
@@ -40,7 +40,7 @@ export default function CTA() {
           <a
             href="/contacts"
             className="
-              px-7 py-2.5 rounded -full
+              px-7 py-2 rounded -full
               bg-orange-600 text-white text-sm font-medium
               hover:bg-amber-500 hover:text-black
               transition
@@ -52,7 +52,7 @@ export default function CTA() {
           <a
             href="/services"
             className="
-              px-7 py-2.5 rounded -full
+              px-7 py-2 rounded -full
               border border-white/20 text-white/70 text-sm
               hover:border-amber-400 hover:text-white
               transition

@@ -162,7 +162,7 @@ export default function NetworkSystemWorldClass() {
           >
             {/* Headline */}
             <div>
-              <h3 className="text-lg md:text-xl font-semibold leading-tight">
+              <h3 className="text-lg text-blue-700 md:text-xl font-semibold leading-tight">
                 We Build Networks That Never Fail{" "}
                 <span className="text-orange-500"></span>
               </h3>

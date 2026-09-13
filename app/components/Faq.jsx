@@ -124,7 +124,7 @@ export default function FAQ() {
                     </div>
 
                     {/* QUESTION */}
-                    <h3 className="text-lg font-medium text-gray-900 leading-relaxed">
+                    <h3 className="text-base font-medium text-gray-900 leading-relaxed">
                       {item.q}
                     </h3>
 

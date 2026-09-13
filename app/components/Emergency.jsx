@@ -47,7 +47,7 @@ export default function Call() {
         >
 
           {/* INNER CONTENT */}
-          <div className="relative px-3 md:px-7 py-7 md:py-9 text-center">
+          <div className="relative px-3 md:px-7 py-20 md:py-9 text-center">
 
             {/* TOP BADGE */}
             <div className="hidden flex justify-center mb-6">
@@ -132,12 +132,12 @@ export default function Call() {
 
               <a
                 href="tel:+254759177042"
-                className="group inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-2 rounded font-semibold shadow-xl shadow-green-500/20 transition-all duration-300 hover:scale-[1.03]"
+                className="group inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-1.5 rounde font-semibold shadow-xl shadow-green-500/20 transition-all duration-300 hover:scale-[1.03]"
               >
 
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10">
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-white/10">
 
-                  <PhoneCall className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                  <PhoneCall className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
 
                 </div>
 
@@ -147,7 +147,7 @@ export default function Call() {
                     Call Us Now
                   </p>
 
-                  <p className="text-sm md:text-base font-bold">
+                  <p className="hidden text-sm md:text-base font-bold">
                     +254 759 177 042
                   </p>
 

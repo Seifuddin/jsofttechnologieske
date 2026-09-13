@@ -71,7 +71,7 @@ export default function TrustSection() {
                     </span>
                   </div>
         
-                  <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                  <h2 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-gray-900 leading-tight">
                     Voices from the{" "}
                     <span className="text-gray-900">
                      businesses we've built with.

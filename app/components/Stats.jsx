@@ -143,28 +143,28 @@ export default function StatsSection() {
               icon: <Briefcase className="w-4 h-4 text-orange-400" />,
               value: counts.projects,
               suffix: "+",
-              label: "Projects",
+              label: "Projects Completed",
               description: "Completed",
             },
             {
               icon: <Users className="w-4 h-4 text-orange-400" />,
               value: counts.clients,
               suffix: "+",
-              label: "Clients",
+              label: "Happy Clients",
               description: "Happy",
             },
             {
               icon: <Clock className="w-4 h-4 text-orange-400" />,
               value: counts.uptime,
               suffix: "%",
-              label: "Uptime",
+              label: "Guarantee Uptime",
               description: "Guarantee",
             },
             {
               icon: <Award className="w-4 h-4 text-orange-400" />,
               value: counts.years,
               suffix: "+",
-              label: "Experience",
+              label: "Years Experience",
               description: "Years",
             },
           ].map((stat, index) => (
@@ -185,20 +185,20 @@ export default function StatsSection() {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 via-orange-500/20 to-blue-500/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500" />
               
               {/* Card Content - Compact */}
-              <div className="relative bg-[#0A0F1E]/80 backdrop-blur-sm rounded-lg border border-white/10 p-4 text-center hover:border-orange-400/20 transition-all duration-300 shadow-lg shadow-blue-500/5 group-hover:shadow-blue-500/15">
+              <div className="relative bg-[#0A0F1E]/40 backdrop-blur-sm rounded-lg border border-white/10 p-4 text-center hover:border-orange-400/20 transition-all duration-300 shadow-lg shadow-blue-500/5 group-hover:shadow-blue-500/15">
                 <div className="flex justify-center mb-1.5">
-                  <div className="p-1.5 rounded-lg bg-gradient-to-br from-orange-500/20 to-blue-500/20 border border-orange-400/20 group-hover:border-orange-400/40 transition duration-300">
+                  <div className="p-1.5 rounded bg-gradient-to-br from-orange-500/20 to-blue-500/20 border border-orange-400/20 group-hover:border-orange-400/40 transition duration-300">
                     {stat.icon}
                   </div>
                 </div>
-                <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                <div className="text-lg md:text-2xl font-semibold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
                   {stat.value}
                   {stat.suffix}
                 </div>
                 <div className="text-xs font-semibold text-blue-200/70 mt-0.5">
                   {stat.label}
                 </div>
-                <div className="text-[10px] text-blue-300/30">
+                <div className="hidden text-[10px] text-blue-300/30">
                   {stat.description}
                 </div>
               </div>

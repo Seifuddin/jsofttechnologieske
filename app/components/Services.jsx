@@ -225,7 +225,7 @@ function ServiceCard({ service, index, onView }) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
+      <div className="p-3">
         <p className="text-sm text-gray-600 leading-relaxed line-clamp-2">
           {service.description}
         </p>
@@ -251,11 +251,11 @@ function ServiceCard({ service, index, onView }) {
         <div className="mt-4 flex items-center gap-2 pt-4 border-t border-gray-100">
           <button
             onClick={() => onView(service)}
-            className={`flex-1 bg-gradient-to-r ${service.color} text-white text-xs font-medium py-2 rounded hover:shadow-lg transition`}
+            className={`flex-1 bg-gradient-to-r ${service.color} text-white text-xs font-medium py-2 rouned hover:shadow-lg transition`}
           >
             View Details
           </button>
-          <button className="p-2 rounded border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition">
+          <button className="p-2 rounde border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition">
             <ArrowRight size={16} className="text-gray-600" />
           </button>
         </div>
