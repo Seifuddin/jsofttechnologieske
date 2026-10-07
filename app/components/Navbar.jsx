@@ -60,7 +60,7 @@ export default function Navbar() {
                 priority
               />
             </div>
-            <div className="hidden sm:block">
+            <div className="hiddensm: block">
               <span className="text-sm md:text-base font-bold text-gray-900">
                 JSoft <span className="text-orange-500">Technologies</span>
               </span>

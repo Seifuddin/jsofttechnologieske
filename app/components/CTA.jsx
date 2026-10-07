@@ -15,7 +15,7 @@ export default function CTA() {
       <div className="absolute inset-0 opacity-10 bg-[url('/images/patterns.png')] bg-cover bg-center" />
 
       {/* Content */}
-      <div className="relative max-w-2xl mx-auto text-center">
+      <div className="relative max-w-3xl mx-auto text-center">
 
         {/* Label */}
         <p className="text-[8px] tracking-[0.25em] uppercase text-orange-400 mb-4">
@@ -23,13 +23,13 @@ export default function CTA() {
         </p>
 
         {/* Heading */}
-        <h2 className="px4 text-2xl md:text-3xl font-semibold leading-snug">
+        <h2 className="text-2xl md:text-3xl font-semibold leading-snug">
           Need reliable IT or security solutions?
           <span className="text-blue-500"> </span>
         </h2>
 
         {/* Subtext */}
-        <p className="px4 mt4 text-white/60 textsm leading-relaxed">
+        <p className="px4 mt-7 text-white/60 textsm leading-relaxed">
           JSoft Technologies KE delivers secure networking, CCTV systems,
           IT support, and digital solutions that keep your business running smoothly.
         </p>

@@ -26,7 +26,7 @@ export default function CompanyStory() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-amber-50 py-14 text-gray-900">
+    <section className="relative overflow-hidden bg-white py-14 text-gray-900">
       {/* Background grid */}
       <div className="absolute inset-0 opacity-25">
         <div className="h-full w-full bg-[linear-gradient(to_right,#d1d5db55_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db55_1px,transparent_1px)] bg-[size:55px_55px]" />

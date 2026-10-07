@@ -141,7 +141,7 @@ export default function Hero() {
       {/* 🎯 MAIN CONTENT WITH PARALLAX - LEFT COLUMN NOW SMALLER */}
       <motion.div 
         style={{ opacity, scale }}
-        className="relative max-w-7xl mx-auto px-6 min-h-screen flex items-center"
+        className="relative max-w-7xl mx-auto px-6 min-h-screen mt-10 py-10 flex items-center"
       >
         <div className="w-full grid lg:grid-cols-12 gap-12 items-center py-20">
 
@@ -215,7 +215,7 @@ export default function Hero() {
               </button>
 
               {/* Secondary CTA - Ghost with underline animation */}
-              <button className="group relative px-3 py-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors">
+              <button className="group border-b border-cyan-400 rounded relative px-3 py-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors">
                 <span>Explore Solutions</span>
                 <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-blue-400 transition-all group-hover:w-full" />
               </button>
@@ -226,14 +226,14 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-wrap gap-3 pt-2"
+              className="flex flex-wrap gap-1 pt-2"
             >
               {[
                 { value: "99.9%", label: "Uptime Guarantee", icon: ShieldCheck },
                 { value: "24/7", label: "Enterprise Support", icon: Network },
                 { value: "500+", label: "Systems Deployed", icon: Globe }
               ].map((stat, index) => (
-                <div key={index} className="flex items-center gap-2.5">
+                <div key={index} className="flex items-center gap-1.5">
                   <div className="p-1.5 rounded-lg bg-white/5 border border-white/5">
                     <stat.icon size={15} className="text-orange-400" />
                   </div>

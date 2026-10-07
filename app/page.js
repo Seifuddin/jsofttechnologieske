@@ -91,7 +91,6 @@ export default function Home() {
         <StatsSection />
         <ServicesSection />
         <CTASection />
-        <GraphicDesignServices />
         <WhyChooseUs />
         <CreativeShowcase />
 

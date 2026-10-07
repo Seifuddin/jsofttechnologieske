@@ -185,7 +185,7 @@ export default function StatsSection() {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 via-orange-500/20 to-blue-500/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500" />
               
               {/* Card Content - Compact */}
-              <div className="relative bg-[#0A0F1E]/40 backdrop-blur-sm rounded-lg border border-white/10 p-4 text-center hover:border-orange-400/20 transition-all duration-300 shadow-lg shadow-blue-500/5 group-hover:shadow-blue-500/15">
+              <div className="relative bg-gradient-to-brfrom-blue-500/20 to-blue-500/20 backdropblur-sm rounded-lg border border-white/10 p-4 text-center hover:border-orange-400/20 transition-all duration-300 shadow-lg shadow-blue-500/5 group-hover:shadow-blue-500/15">
                 <div className="flex justify-center mb-1.5">
                   <div className="p-1.5 rounded bg-gradient-to-br from-orange-500/20 to-blue-500/20 border border-orange-400/20 group-hover:border-orange-400/40 transition duration-300">
                     {stat.icon}

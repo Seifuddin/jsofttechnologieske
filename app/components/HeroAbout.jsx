@@ -140,7 +140,7 @@ export default function AboutHero() {
       {/* 🎯 MAIN CONTENT WITH PARALLAX */}
       <motion.div
         style={{ opacity, scale }}
-        className="relative max-w-7xl mx-auto px-6 min-h-[90vh] flex items-center"
+        className="relative max-w-7xl mx-auto px-6 mt-10 min-h-[90vh] flex items-center"
       >
         <div className="w-full grid lg:grid-cols-12 gap-10 items-center py-12">
           {/* LEFT CONTENT - 7 columns */}
@@ -156,13 +156,13 @@ export default function AboutHero() {
                 <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-lg animate-pulse" />
                 <div className="relative flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 backdrop-blur-sm">
                   <span className="relative flex h-1.5 w-1.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-blue-400" />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-orange-400" />
                   </span>
                   <span className="text-[10px] font-mono text-blue-300 tracking-widest uppercase">
                     Trusted Technology & Security
                   </span>
-                  <Sparkles size={10} className="text-blue-400" />
+                  <Sparkles size={10} className="text-orange-400" />
                 </div>
               </div>
             </motion.div>
@@ -179,7 +179,7 @@ export default function AboutHero() {
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500">
                   With Smart Technology
                 </span>
-                <span className="block text-2xl md:text-3xl lg:text-4xl font-light text-white/40 mt-1">
+                <span className="block text-2xl md:text-3xl lg:text-4xl font-light text-orange-400 mt-1">
                   & Secure Digital Solutions
                 </span>
               </h1>
@@ -205,7 +205,7 @@ export default function AboutHero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-wrap items-center gap-3 pt-1"
             >
-              <button className="group relative px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-xs font-semibold flex items-center gap-2 transition-all hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-[1.02] active:scale-[0.98]">
+              <button className="group relative px-5 py-2 rounded bg-gradient-to-r from-orange-500 to-orange-600 text-xs font-semibold flex items-center gap-2 transition-all hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-[1.02] active:scale-[0.98]">
                 <span>Explore Services</span>
                 <ArrowRight
                   size={14}
@@ -214,7 +214,7 @@ export default function AboutHero() {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </button>
 
-              <button className="group relative px-3 py-2 text-xs font-medium text-white/60 hover:text-white transition-colors">
+              <button className="group relative px-3 py-2 border-b border-cyan-400 rounded text-xs font-medium text-white/60 hover:text-white transition-colors">
                 <span>Contact Us</span>
                 <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-blue-400 transition-all group-hover:w-full" />
               </button>
@@ -225,7 +225,7 @@ export default function AboutHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-2 pt-1"
+              className="hidden gridgrid-cols-2md:grid-cols-4gap-2pt-1"
             >
               {[
                 {
